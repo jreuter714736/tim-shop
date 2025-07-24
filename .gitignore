@@ -10,3 +10,8 @@ node_modules/
 
 # Docker
 db/pgdata/
+
+
+
+
+.DS_Store
