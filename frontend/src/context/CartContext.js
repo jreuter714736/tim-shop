@@ -25,7 +25,6 @@ export function CartProvider({ children }) {
   );
 }
 
-// 👉 DAS HAT GEFEHLT:
 export function useCart() {
   return useContext(CartContext);
 }
