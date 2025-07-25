@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useCart } from '../context/CartContext';
 
 function Shop() {
   const [products, setProducts] = useState([]);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     axios.get('http://localhost:4000/api/products')
@@ -18,6 +20,12 @@ function Shop() {
           <h2 className="text-lg font-bold">{product.name}</h2>
           <p className="text-gray-600">{product.description}</p>
           <p className="text-blue-600 font-semibold mt-2">{product.price} €</p>
+          <button
+            onClick={() => addToCart(product)}
+            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          >
+            In den Warenkorb
+          </button>
         </div>
       ))}
     </div>
