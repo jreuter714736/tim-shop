@@ -1,0 +1,21 @@
+{
+  "name": "tim",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jreuter714736/tim-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jreuter714736/tim-shop/issues"
+  },
+  "homepage": "https://github.com/jreuter714736/tim-shop#readme",
+  "description": ""
+}
